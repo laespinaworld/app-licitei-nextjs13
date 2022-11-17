@@ -15,6 +15,7 @@ import { FaRegComments } from "react-icons/fa";
 import { BiMessageSquareDots } from "react-icons/bi";
 
 import { HeartIcon, ChartPieIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 
 function SideNavbar() {
@@ -40,25 +41,28 @@ function SideNavbar() {
               <div className="flex mb-2 justify-start text-primary hover:bg-primary_hover hover:text-neutras-light items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <MagnifyingGlassIcon className="h-6 w-6 group-hover:text-white " />
                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
-                  Profile
+                  Pesquisar
                 </h3>
               </div>
               <div className="flex mb-2 justify-start text-primary hover:bg-primary_hover hover:text-neutras-light items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <FaRegComments className="text-2xl text-gray-600 group-hover:text-white " />
                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
-                  Comments
+                  Análises
                 </h3>
               </div>
+              
               <div className="flex mb-2 justify-start text-primary hover:bg-primary_hover hover:text-neutras-light items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <MdOutlineAnalytics className="text-2xl text-gray-600 group-hover:text-white " />
                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
-                  Analytics
+                  <Link href="/">
+                  Monitoraramento
+                  </Link>
                 </h3>
               </div>
               <div className="flex mb-2 justify-start text-primary hover:bg-primary_hover hover:text-neutras-light items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <BiMessageSquareDots className="text-2xl text-gray-600 group-hover:text-white " />
                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
-                  Messages
+                  Juridico
                 </h3>
               </div>
               <div className="flex mb-2 justify-start text-primary hover:bg-primary_hover hover:text-neutras-light items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
